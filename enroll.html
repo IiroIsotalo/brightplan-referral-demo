@@ -16,10 +16,10 @@
      }
 
       function submitForm() {
-        var userEmail = makeid(5)+"@brightplan.com"
+        var userEmail = makeid(5)+"@email.com"
         RH.trackReferral(userEmail);
-        alert("Referred as "+userEmail);
         navigateToEmailPage();
+        alert("Referred as "+userEmail);
       }
 
       function navigateToEmailPage() {
