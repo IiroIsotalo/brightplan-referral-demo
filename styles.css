@@ -1,0 +1,35 @@
+document, body {
+  padding: 0;
+  margin: 0;
+  font-family: "helvetica";
+  height: 100%;
+}
+
+#top-menu {
+  background-color: #0f2951;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#body {
+  width: 1176px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#body-enroll {
+  text-align: center;
+  height: 100%;
+}
+
+#body-enroll img {
+  margin-top: 100px;
+}
+
+.desc {
+  font-weight: bold;
+}
+
+#maitre-widget {
+  margin-top: 20px;
+}

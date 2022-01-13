@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Referral Hero Demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- start ReferralHero code -->      <script>!function(m,a,i,t,r,e){if(m.RH)return;r=m.RH={},r.uuid=t,r.loaded=0,r.base_url=i,r.queue=[],m.rht=function(){r.queue.push(arguments)};e=a.getElementsByTagName('script')[0],c=a.createElement('script');c.async=!0,c.src=i+'/widget/'+t+'.js',e.parentNode.insertBefore(c,e)}(window,document,'https://app.referralhero.com','MFeaaba6fef5');</script>      <!-- end ReferralHero code -->
+
+    <script>
+      var picture = document.getElementById("enroll-page");
+      function makeid(length) {
+        var result           = '';
+        var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var charactersLength = characters.length;
+        for ( var i = 0; i < length; i++ ) {
+          result += characters.charAt(Math.floor(Math.random() * charactersLength));
+       }
+       return result;
+     }
+
+      function submitForm() {
+        var userEmail = "rhdemo+"+makeid(5)+"@email.com";
+        RH.trackReferral(userEmail);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="body-enroll">
+      <img id="enroll-page" src="assets/enroll-page.png" onclick="submitForm()" />
+    </div>
+  </body>
+</html>
