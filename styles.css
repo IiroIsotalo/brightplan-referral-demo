@@ -23,7 +23,7 @@ document, body {
 }
 
 #body-enroll img {
-  margin-top: 100px;
+  margin: 100px auto 0 auto;
 }
 
 .desc {
@@ -32,4 +32,8 @@ document, body {
 
 #maitre-widget {
   margin-top: 20px;
+}
+
+#email-page {
+  display: none;
 }

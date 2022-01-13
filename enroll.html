@@ -5,7 +5,6 @@
     <!-- start ReferralHero code -->      <script>!function(m,a,i,t,r,e){if(m.RH)return;r=m.RH={},r.uuid=t,r.loaded=0,r.base_url=i,r.queue=[],m.rht=function(){r.queue.push(arguments)};e=a.getElementsByTagName('script')[0],c=a.createElement('script');c.async=!0,c.src=i+'/widget/'+t+'.js',e.parentNode.insertBefore(c,e)}(window,document,'https://app.referralhero.com','MFeaaba6fef5');</script>      <!-- end ReferralHero code -->
 
     <script>
-      var picture = document.getElementById("enroll-page");
       function makeid(length) {
         var result           = '';
         var characters       = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
@@ -17,14 +16,23 @@
      }
 
       function submitForm() {
-        var userEmail = "rhdemo+"+makeid(5)+"@email.com";
+        var userEmail = "iisotalo+test2@brightplan.com"
         RH.trackReferral(userEmail);
+        navigateToEmailPage();
+      }
+
+      function navigateToEmailPage() {
+        var enroll_page = document.getElementById("enroll-page");
+        var email_page = document.getElementById("email-page");
+        enroll_page.style.display = "none";
+        email_page.style.display = "block";
       }
     </script>
   </head>
   <body>
     <div id="body-enroll">
       <img id="enroll-page" src="assets/enroll-page.png" onclick="submitForm()" />
+      <img id="email-page" src="assets/email-page.png" />
     </div>
   </body>
 </html>
