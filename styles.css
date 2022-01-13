@@ -3,9 +3,23 @@ document, body {
   margin: 0;
   font-family: "helvetica";
   height: 100%;
+  color: #3C3C3C;
 }
 
-#top-menu {
+#hubspot-header {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+#hubspot-footer {
+  text-align: center;
+  height: 100%;
+  background-color: #072034;
+  margin-top: 100px;
+}
+
+#brightplan-header {
   background-color: #0f2951;
   margin-bottom: 20px;
   text-align: center;
@@ -27,7 +41,8 @@ document, body {
 }
 
 .desc {
-  font-weight: bold;
+  font-weight: normal;
+  margin-top: 30px;
 }
 
 #maitre-widget {
